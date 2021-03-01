@@ -28,7 +28,7 @@ body {
 }
 
 .cube  {
-  animation: spinCube 4s infinite linear;
+  animation: spinCube 5s infinite linear;
 }
 
 @keyframes spinCube {
@@ -49,12 +49,12 @@ body {
   text-align: center; */
 }
 
-.cube__face--front  { background: hsla(120, 100%, 50%, 0.5); }
-.cube__face--right  { background: hsla( 120, 100%, 50%, 0.5); }
-.cube__face--back   { background: hsla(120, 100%, 50%, 0.5); }
-.cube__face--left   { background: hsla(120, 100%, 50%, 0.5); }
-.cube__face--top    { background: hsla(120, 100%, 50%, 0.5); }
-.cube__face--bottom { background: hsla(120, 100%, 50%, 0.5); }
+.cube__face--front  { background: hsla(300, 100%, 50%, 0.9); }
+.cube__face--right  { background: hsla(300, 100%, 50%, 0.9); }
+.cube__face--back   { background: hsla(300, 100%, 50%, 0.9); }
+.cube__face--left   { background: hsla(300, 100%, 50%, 0.9); }
+.cube__face--top    { background: hsla(300, 100%, 50%, 0.9); }
+.cube__face--bottom { background: hsla(300, 100%, 50%, 0.9); }
 
 .cube__face--front  { transform: rotateY( 0deg) translateZ(120px); }
 .cube__face--right  { transform: rotateY( 90deg) translateZ(120px); }
@@ -68,7 +68,7 @@ body {
 }
 
 </style>
-
+<body>
 <div class="scene">
     <div class="cube">
       <div class="cube__face cube__face--front"></div>
@@ -79,3 +79,4 @@ body {
       <div class="cube__face cube__face--bottom"></div>
     </div>
 </div>
+</body>

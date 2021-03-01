@@ -1,0 +1,39 @@
+
+<html lang="pt-br">
+    <title>Chão 3D com CSS</title>
+    <head>
+        <style>
+            .container{
+                width: 90%;
+                height: 90vh;
+                margin: calc(5% - 0px);
+                border: 1px solid rgba(0,0,0,.3);
+                border-radius: 20px;
+                /* background-image: linear-gradient(
+                    to top, 
+                    rgba(177, 253, 243, 0.5),
+                    rgba(17, 239, 255, 0.5)
+                ); */
+                transform-style: preserve-3d;
+                transform: translateZ(100px);
+            }
+            .piso{
+                position: absolute;
+                bottom: 0px;
+                width: 90%;
+                margin: 0px 5%;
+                height: 400px;
+                background-color: rgba(177, 253, 243, 0.5);
+                border: 2px solid rgba(0,0,0,.7);
+                transition: 5s;
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="piso">
+
+        </div>
+    </div>
+</body>
+</html>
