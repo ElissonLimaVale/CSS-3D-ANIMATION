@@ -5,8 +5,8 @@ body {
     font-family: sans-serif; 
     background-image: linear-gradient(
         to top,
-        rgba(52, 216, 107, 0.548),
-        rgba(209, 142, 53, 0.609)
+        rgba(13, 14, 13, 0.623),
+        rgba(0, 0, 0, 0.979)
     );
 }
 
@@ -33,6 +33,7 @@ body {
 
 @keyframes spinCube {
     0% { transform: translateZ(-100px) rotateX(  0deg) rotateY(  0deg); }
+    /* 50% { transform: translateZ(0px) rotateX(  180deg) rotateY(  180deg); } */
   100% { transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); }
 }
 
@@ -49,19 +50,19 @@ body {
   text-align: center; */
 }
 
-.cube__face--front  { background: hsla(300, 100%, 50%, 0.9); }
-.cube__face--right  { background: hsla(300, 100%, 50%, 0.9); }
-.cube__face--back   { background: hsla(300, 100%, 50%, 0.9); }
-.cube__face--left   { background: hsla(300, 100%, 50%, 0.9); }
-.cube__face--top    { background: hsla(300, 100%, 50%, 0.9); }
-.cube__face--bottom { background: hsla(300, 100%, 50%, 0.9); }
+.cube__face--front  { background: hsla(300, 100%, 50%, 0.7); }
+.cube__face--right  { background: hsla(250, 100%, 50%, 0.7); }
+.cube__face--back   { background: hsla(129, 100%, 50%, 0.7); }
+.cube__face--left   { background: hsla(37, 100%, 50%, 0.7); }
+.cube__face--top    { background: hsla(14, 100%, 50%, 0.7); }
+.cube__face--bottom { background: hsla(46, 100%, 50%, 0.7); }
 
-.cube__face--front  { transform: rotateY( 0deg) translateZ(120px); }
-.cube__face--right  { transform: rotateY( 90deg) translateZ(120px); }
-.cube__face--back   { transform: rotateY(180deg) translateZ(120px); }
-.cube__face--left   { transform: rotateY(-90deg) translateZ(120px); }
-.cube__face--top    { transform: rotateX( 90deg) translateZ(120px); }
-.cube__face--bottom { transform: rotateX(-90deg) translateZ(120px); }
+.cube__face--front  { transform: rotateY( 0deg) translateZ(180px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(180px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(180px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(180px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(180px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(180px); }
 
 .cube.is-backface-hidden .cube__face {
     backface-visibility: hidden;
